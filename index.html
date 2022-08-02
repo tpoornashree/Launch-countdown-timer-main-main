@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css" />
+	<script	src="https://kit.fontawesome.com/0f4ecf7998.js"	crossorigin="anonymous"></script>
+	<script src="https://rawgit.com/moment/moment/2.2.1/min/moment.min.js"></script>
+	<script src="script.js" defer></script>
+  <title>Frontend Mentor | Launch countdown timer</title>
+</head>
+<body>
+  <div class="background">
+  </div>
+  <i class="fas fa-cog settings"></i>
+  <form class="settings-page">
+    <h3>PLEASE ENTER LAUNCH DATE AND TIME</h3>
+    <label for="date">DATE</label>
+    <input type="date" id="date" name="date" required />
+    <label for="time">TIME</label>
+    <input type="time" id="time" name="time" required />
+    <button class="start" type="submit">START COUNTDOWN</button>
+  </form>
+  <main class="main-content">
+    <h1 class="title">We're launching soon</h1>
+    <div class="countdown">
+      <div class="countdown-card">
+        <div class="card">
+          <div class="top">
+            <div class="overlay"></div>
+          </div>
+          <div class="bottom"></div>
+          <div class="number days-left"></div>
+        </div>
+        <p class="display">Days</p>
+      </div>
+
+      <div class="countdown-card">
+        <div class="card">
+          <div class="top">
+            <div class="overlay"></div>
+          </div>
+          <div class="bottom"></div>
+          <div class="number hours-left"></div>
+        </div>
+        <p class="display">Hours</p>
+      </div>
+
+      <div class="countdown-card">
+        <div class="card">
+          <div class="top">
+            <div class="overlay"></div>
+          </div>
+          <div class="bottom"></div>
+          <div class="number mins-left"></div>
+        </div>
+        <p class="display">Minutes</p>
+      </div>
+
+      <div class="countdown-card">
+        <div class="card">
+          <div class="top">
+            <div class="overlay"></div>
+          </div>
+          <div class="bottom"></div>
+          <div class="number secs-left"></div>
+        </div>
+        <p class="display">Seconds</p>
+      </div>
+    </div>
+  </main>
+
+  <img src="images/pattern-hills.svg" alt="pattern-hills" class="pattern-hills" />
+
+  <nav class="nav">
+    <ul>
+      <li>
+        <a href="https://www.facebook.com" ><i class="fab fa-facebook-square icon"></i></a>
+      </li>
+      <li>
+        <a href="https://pinterest.com/" ><i class="fab fa-pinterest icon"></i></a>
+      </li>
+      <li>
+        <a href="https://www.instagram.com/"><i class="fab fa-instagram icon"></i></a>
+      </li>
+    </ul>
+  </nav>
+
+  <footer class="attribution">
+    Challenge by
+    <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by<a href="https://github.com/tpoornashree" target="_blank"> tpoornashree</a>.
+  </footer>
+</body>
+</html>
